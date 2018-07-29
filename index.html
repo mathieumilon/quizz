@@ -49,9 +49,9 @@ window.fbAsyncInit = function() {
 	FB.Event.subscribe('auth.login', function () {
     	window.location = "https://annalytics.typeform.com/to/gdNdpR";
       });
-
-
-  // Now that we've initialized the JavaScript SDK, we call FB.getLoginStatus().
+  
+  
+  // Now that we've initialized the JavaScript SDK, we call FB.getLoginStatus(). 
   // This function gets the state of the person visiting this page.
   FB.getLoginStatus(function(response) {
     statusChangeCallback(response);
@@ -68,6 +68,7 @@ window.fbAsyncInit = function() {
 }(document, 'script', 'facebook-jssdk'));
 </script>
 
-<div class="fb-login-button" data-max-rows="1" data-size="large" show_faces="true" data-scope="public_profile,email" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+<div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="true" data-scope="public_profile,email" data-button-type="continue_with" data-show-faces="false" data-auto-logout-link="false" data-use-continue-as="false"></div>
+
   </body>
   </html>
