@@ -13,18 +13,6 @@
 <body>
 <div id="fb-root"></div>
 <script>
-  window.fbAsyncInit = function() {
-  FB.init({
-    appId : '1882922768405142',
-    channelUrl : 'https://nosdevoirs.github.io/quizz/',
-    cookie : true, // enable cookies to allow the server to access the session
-    xfbml : true, // parse social plugins on this page
-    oauth : true,
-    version : 'v3.1' // use version 2.1
-  });
-	FB.Event.subscribe('auth.login', function () {
-    	window.location = "https://annalytics.typeform.com/to/gdNdpR";
-      });
 function verify(){
         FB.init({
     appId : '1882922768405142',
