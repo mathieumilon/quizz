@@ -14,8 +14,8 @@
 <!-- Display login status -->
 <div id="status"></div>
 
-<!-- Facebook login or logout button -->
-<a href="javascript:void(0);" onclick="fbLogin()" id="fbLink"><img src="fblogin.png"/></a>
+<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+</fb:login-button>
 
 <!-- Display user profile data -->
 <div id="userData"></div>
