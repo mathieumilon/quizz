@@ -25,7 +25,26 @@
 	FB.Event.subscribe('auth.login', function () {
     	window.location = "https://annalytics.typeform.com/to/gdNdpR";
       });
-  </script>
+function verify(){
+        FB.init({
+    appId : '1882922768405142',
+    channelUrl : 'https://nosdevoirs.github.io/quizz/',
+    cookie : true, // enable cookies to allow the server to access the session
+    xfbml : true, // parse social plugins on this page
+    oauth : true,
+    version : 'v3.1' // use version 2.1
+  });
+
+        FB.getLoginStatus(function(response){
+                    if(response.session){
+                         top.location.href="url to your app home page";
+                    }
+                    else{
+                         top.location.href="https://www.facebook.com/dialog/oauth?client_id=1882922768405142&redirect_uri=https://annalytics.typeform.com/to/gdNdpR&scope=public_profile,email";
+                     }
+        })
+    }
+</script>
   
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
